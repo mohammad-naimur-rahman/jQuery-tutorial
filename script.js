@@ -1,30 +1,13 @@
-// Tutorial link: https://www.youtube.com/watch?v=HgvIox6ehkM
-
-// jQery provides a function object that can be accessible by `$` sign, it accepts a parameter that is the document object what we want to manipulate.
-
-// Here $(docuemnt) means we can now manipulate the document object
-
-// and then we can apply a jQuery property
-
-// and multiple property can be assigned by chaining them and they will execute by order
-
-// here $(document).ready means when the DOM is ready
-//ready() is a function that takes a callback funtion and inside it we can manipulate the document object
-
-// text() works like innerText
-
-// to change the CSS styling we can use jQuery 'css' property
-// css function takes 2 param, first is the css property and second the property value
 $(document).ready(() => {
-  $('#readyDemo').text('Document is ready').css('color', 'teal').css('font-size', '20px')
+  //-- selectors
+  $('p').hide() // selects all the p tag - display: hidden
+  $('#id-name').css('display', 'none')
+  $('.class-name').css('display', 'none')
+  // $('*') - select everything
+  // $(this) - select the current HTML element
+  // $('p.intro') - we can add specificity level
+  // $('p:first') - pseudeo element
+  // $('ul li:first') - nested selector
+  // $("a[target='_blank']") - attribute selector
+  // for more info - https://www.w3schools.com/jquery/jquery_ref_selectors.asp
 })
-
-$('.demo-class').css('color', 'orangered')
-
-// tag select $('h2')
-// attribute select $('a[target=_blnak]')
-// universal selec $('*')
-// id select $('#id')
-// class select $('.class-name')
-// psedu and position select $('.list > li:first-child')
-//-- And it applies for every selector like we select in css
