@@ -116,4 +116,39 @@ $(document).ready(() => {
   })
 
   // Stop
+  const stopDiv = $('.stop-container')
+  $('.btn-stop-start').click(function () {
+    stopDiv.animate({ width: '600px' }, 2000)
+    stopDiv.animate({ fontSize: '5rem' }, 2000)
+  })
+
+  $('.btn-stop-first').click(function () {
+    stopDiv.stop()
+  })
+
+  $('.btn-stop-all').click(function () {
+    stopDiv.stop(true)
+  })
+
+  $('.btn-stop-end').click(function () {
+    stopDiv.stop(true, true)
+  })
+
+  $('.btn-stop-reset').click(function () {
+    stopDiv.animate({ width: '400px' }, 2000)
+    stopDiv.animate({ fontSize: '1rem' }, 2000)
+  })
+
+  // Callback
+  // For every animation, for the last parameter, we can use a callback function that triggers when the animation is completed
+
+  $('.btn-stop-callback').click(function () {
+    stopDiv.animate({ width: '600px' }, 2000, function () {
+      alert('Animation is completed!')
+    })
+  })
+  // For more info about animations - https://www.w3schools.com/jquery/jquery_ref_effects.asp
+
+  //-- Chaining
+  $('.chaining').css('font-size', '2.5rem').css('color', 'teal').slideUp().slideDown()
 })

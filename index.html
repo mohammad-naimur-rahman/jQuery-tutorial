@@ -14,7 +14,7 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container mb-3">
     <pre>Will be hidden</pre>
     <button class="btn btn-secondary btn-click">Click me to create a text!</button>
     <p class="btn-next"></p>
@@ -49,6 +49,20 @@
     <button class="btn btn-primary animate-btn-3">
       Animate 3 (queue)
     </button>
+
+    <h2 class="mt-4">Stop function</h2>
+    <div
+      class="stop-container bg-success rounded d-flex align-items-center justify-content-center text-white shadow shadow-lg mb-2">
+      Some Text
+    </div>
+    <button class="btn btn-success btn-stop-start">Start</button>
+    <button class="btn btn-danger btn-stop-first">Stop first</button>
+    <button class="btn btn-warning btn-stop-all">Stop all</button>
+    <button class="btn btn-secondary btn-stop-end">Stop but end</button>
+    <button class="btn btn-primary btn-stop-reset">Reset</button>
+    <button class="btn btn-info btn-stop-callback">Callback (Applies for all animations)</button>
+
+    <h2 class="chaining mt-3">We can use multiple functions one after another in a chain in jQuery</h2>
   </div>
 </body>
 
