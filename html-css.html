@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>jQuery HTML and CSS</title>
+  <title>jQuery Tutorial</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <script src="./jQuery.js" defer></script>
+  <script src="./html-css.js" defer></script>
+</head>
+
+<body>
+  <nav class="d-flex justify-content-around bg-secondary position-fixed w-100 top-0 left-0 flex-wrap">
+    <a class="btn btn-primary mx-2" href="index.html">Selector, Events & Effects</a>
+    <a class="btn btn-primary mx-2" href="html-css.html">HTML & CSS</a>
+    <a class="btn btn-primary mx-2" href="traversing.html">Traversing</a>
+    <a class="btn btn-primary mx-2" href="ajax.html">Ajax</a>
+  </nav>
+  <div class="container mb-3 mt-5">
+    <p class="get-text"><span>Some text</span></p>
+    <p class="print-text text-primary"></p>
+    <p>The HTML inside the first element</p>
+    <p class="print-html text-secondary"></p>
+    <input type="text" value="Some Value" class="get-value form-control">
+    <p class="print-value"></p>
+    <a href="https://www.naimur.me" class="get-attr">Will print the href below</a>
+    <p class="print-attr"></p>
+
+    <p class="set-text"></p>
+    <p class="set-html"></p>
+    <a class="set-attr">Will set href attribute</a>
+  </div>
+</body>
+
+</html>
