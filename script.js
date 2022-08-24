@@ -91,4 +91,29 @@ $(document).ready(() => {
     $('.slide-toggle-container').slideToggle(2000)
   })
   // Other values are slideUp() and slideDown()
+
+  // Animate
+  $('.animate-btn-1').click(function () {
+    $('.animate-container').animate({ left: '200px', width: '200px', height: '+=100px' }, 1000)
+  })
+
+  $('.animate-btn-2').click(function () {
+    $('.animate-container').animate(
+      {
+        width: 'toggle',
+      },
+      2000
+    )
+    $('.animate-text').animate({ opacity: 'toggle' }, 1000)
+  })
+  //animation queue
+  const animateDiv = $('.animate-container')
+  $('.animate-btn-3').click(function () {
+    animateDiv.animate({ width: '600px' }, 'slow')
+    animateDiv.animate({ width: '400px' }, 'slow')
+    animateDiv.animate({ height: '600px' }, 'slow')
+    animateDiv.animate({ height: '400px' }, 'slow')
+  })
+
+  // Stop
 })

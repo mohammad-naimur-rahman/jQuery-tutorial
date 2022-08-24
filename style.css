@@ -24,3 +24,9 @@ html {
 .slide-toggle-container {
   height: 400px;
 }
+
+.animate-container {
+  width: 400px;
+  border: 1px solid gray;
+  position: relative;
+}
