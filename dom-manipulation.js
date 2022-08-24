@@ -37,4 +37,51 @@ $(document).ready(function () {
       return +old - 1
     })
   })
+
+  //-- Add elements
+  // append()
+  $('.append').append(
+    `
+    <ul>
+      <li>This is appended li</li>
+      <li>This is appended li</li>
+      <li>This is appended li</li>
+    </ul>
+  `,
+    '<p>This is also appended</p>'
+  )
+
+  // prepend()
+  $('.prepend').prepend(
+    `
+    <ul>
+      <li>This is prepended li</li>
+      <li>This is prepended li</li>
+      <li>This is prepended li</li>
+    </ul>
+  `,
+    '<p>This is also prepended</p>'
+  )
+
+  // after()
+  $('.after').after(
+    `
+    <ul>
+      <li>This is after</li>
+      <li>This is after</li>
+      <li>This is after</li>
+    </ul>
+  `
+  )
+
+  // before()
+  $('.before').before(
+    `
+    <ul>
+      <li>This is before</li>
+      <li>This is before</li>
+      <li>This is before</li>
+    </ul>
+  `
+  )
 })
