@@ -84,4 +84,20 @@ $(document).ready(function () {
     </ul>
   `
   )
+
+  //-- Remove Elements
+  // remove()
+  $('.remove-btn').click(function () {
+    $('.remove').remove()
+  })
+
+  // empty()
+  $('.empty-btn').click(function () {
+    $('.empty').empty()
+  })
+
+  // remove filtered
+  $('.remove-filter-btn').click(function () {
+    $('p').remove('.remove-filter-1, .remove-filter-2')
+  })
 })
