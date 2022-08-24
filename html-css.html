@@ -16,12 +16,13 @@
 
 <body>
   <nav class="d-flex justify-content-around bg-secondary position-fixed w-100 top-0 left-0 flex-wrap">
-    <a class="btn btn-primary mx-2" href="index.html">Selector, Events & Effects</a>
-    <a class="btn btn-primary mx-2" href="html-css.html">HTML & CSS</a>
-    <a class="btn btn-primary mx-2" href="traversing.html">Traversing</a>
-    <a class="btn btn-primary mx-2" href="ajax.html">Ajax</a>
+    <a class="btn btn-danger" href="index.html">Selector, Events & Effects</a>
+    <a class="btn btn-danger" href="html-css.html">HTML & CSS</a>
+    <a class="btn btn-danger" href="traversing.html">Traversing</a>
+    <a class="btn btn-danger" href="ajax.html">Ajax</a>
   </nav>
   <div class="container mb-3 mt-5">
+    <h2>Get</h2>
     <p class="get-text"><span>Some text</span></p>
     <p class="print-text text-primary"></p>
     <p>The HTML inside the first element</p>
@@ -31,9 +32,20 @@
     <a href="https://www.naimur.me" class="get-attr">Will print the href below</a>
     <p class="print-attr"></p>
 
+    <h2>Set</h2>
     <p class="set-text"></p>
     <p class="set-html"></p>
+    <input type="text" class="set-value form-control">
     <a class="set-attr">Will set href attribute</a>
+    <h4>Set with callback</h4>
+    <p class="set-text-cb">Old text</p>
+    <p class="set-html-cb"><span>Old HTML</span></p>
+    <a href="https://www.google.com" class="set-attr-cb">Will change the href with callback</a>
+    <div class="bg-secondary p-3 rounded mt-3">
+      <input type="text" class="form-control set-value-cb" value="0">
+      <button class="btn btn-success inc mt-2">Increment</button>
+      <button class="btn btn-danger dec mt-2">Decrement</button>
+    </div>
   </div>
 </body>
 
