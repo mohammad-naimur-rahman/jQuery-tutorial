@@ -19,9 +19,21 @@
     <button class="btn btn-secondary btn-click">Click me to create a text!</button>
     <p class="btn-next"></p>
     <button class="btn btn-info btn-hide">I will be hidden on double click</button>
-    <div class="counter-box shadow shadow-lg">
-      <p>You have entered this box <span class="counter-enter">0</span> times!</p>
-      <p>You have left this box <span class="counter-leave">0</span> times!</p>
+    <div class="flex flex-column">
+      <div class="counter-box shadow shadow-lg">
+        <p>You have entered this box <span class="counter-enter">0</span> times!</p>
+        <p>You have left this box <span class="counter-leave">0</span> times!</p>
+      </div>
+      <button class="btn btn-success show-btn mt-3">Show</button>
+      <button class="btn btn-danger hide-btn mt-3">Hide</button>
+      <button class="btn btn-info toggle-btn mt-3 ms-3">Toggle slowly</button>
+      <button class="btn btn-warning fade-in-btn mt-3 ms-3">Fade In</button>
+      <button class="btn btn-secondary fade-out-btn mt-3 ms-3">Fade Out</button>
+      <button class="btn btn-primary fade-toggle-btn mt-3 ms-3">Fade toggle</button>
+    </div>
+
+    <div class="bg-primary mt-3 p-2 rounded text-white cursor-pointer slide-toggle-btn">Slide Toggle</div>
+    <div class="bg-primary mt-1 px-2 rounded text-white cursor-pointer slide-toggle-container">Slide Toggle
     </div>
   </div>
 </body>

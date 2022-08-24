@@ -45,4 +45,50 @@ $(document).ready(() => {
     },
   })
   // For more info - https://www.w3schools.com/jquery/jquery_ref_events.asp
+
+  //-- Effects
+
+  // Show / Hide
+  $('.hide-btn').click(function () {
+    $('.counter-box').hide(1000)
+    $(this).hide()
+    $('.show-btn').show()
+  })
+
+  $('.show-btn').hide()
+  $('.show-btn').click(function () {
+    $('.counter-box').show(1000)
+    $(this).hide()
+    $('.hide-btn').show()
+  })
+
+  $('.toggle-btn').click(function () {
+    $('.counter-box').toggle(2000)
+  })
+
+  // Fade
+  $('.fade-in-btn').hide()
+  $('.fade-in-btn').click(function () {
+    $(this).hide()
+    $('.counter-box').fadeIn(1000)
+    $('.fade-out-btn').show()
+  })
+
+  $('.fade-out-btn').click(function () {
+    $(this).hide()
+    $('.counter-box').fadeOut(1000)
+    $('.fade-in-btn').show()
+  })
+
+  $('.fade-toggle-btn').click(function () {
+    $('.counter-box').fadeToggle('slow')
+  })
+  // Others fade functions
+  // fadeTo(speed, opacity, callback)
+
+  // Slide
+  $('.slide-toggle-btn').click(function () {
+    $('.slide-toggle-container').slideToggle(2000)
+  })
+  // Other values are slideUp() and slideDown()
 })

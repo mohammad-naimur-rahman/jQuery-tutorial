@@ -10,9 +10,17 @@ html {
   width: 400px;
   height: 400px;
   background-color: aquamarine;
-  margin: 20px 0;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.slide-toggle-container {
+  height: 400px;
 }
