@@ -6,6 +6,11 @@ html {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+hr {
+  height: 2px;
+  background-color: brown;
+}
+
 nav > a {
   width: 25%;
   border-radius: 0 !important;
