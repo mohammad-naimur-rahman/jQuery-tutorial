@@ -100,4 +100,38 @@ $(document).ready(function () {
   $('.remove-filter-btn').click(function () {
     $('p').remove('.remove-filter-1, .remove-filter-2')
   })
+
+  //-- Get and Set CSS classes
+  // addClass()
+  $('.add-class-btn').click(function () {
+    $('.add-class, .add-class-2').addClass('text-success small')
+  })
+
+  // removeClass()
+  $('.remove-class-btn').click(function () {
+    $('.remove-class').removeClass('bg-secondary')
+  })
+
+  // toggleClass()
+  $('.toggle-class-btn').click(function () {
+    $('.remove-class').toggleClass('bg-secondary')
+  })
+
+  //-- css() method
+  // get CSS property value
+  const className = $('.get-class').css('color')
+  $('.print-class').text(className)
+
+  // set CSS property value by chaining or one by one
+  $('.add-custom-css-btn').click(function () {
+    $('.add-custom-css').css('font-size', '30px').css('font-style', 'italic')
+  })
+
+  // set multiple CSS properties value by an object
+  $('.add-custom-css-obj-btn').click(function () {
+    $('.add-custom-css').css({
+      'font-size': '30px',
+      'font-style': 'italic',
+    })
+  })
 })
