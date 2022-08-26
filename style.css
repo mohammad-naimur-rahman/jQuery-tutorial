@@ -3,7 +3,7 @@ body {
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Lato', Arial, Helvetica, sans-serif !important;
 }
 
 hr {
@@ -49,4 +49,17 @@ a:not(:last-of-type) {
   width: 400px;
   height: 250px;
   font-size: 1rem;
+}
+
+.dimensions {
+  width: 400px;
+  height: 300px;
+  margin: 10px;
+  padding: 30px;
+  border: 10px solid gray;
+}
+
+.dimensions p {
+  line-height: 1;
+  margin: 5px 0;
 }

@@ -134,4 +134,30 @@ $(document).ready(function () {
       'font-style': 'italic',
     })
   })
+
+  // measure Dimensions
+  const dimensions = $('.dimensions')
+  const width = `<p>Width ${dimensions.width()}</p>` // width of the main element
+  const innerWidth = `<p>Inner Width ${dimensions.innerWidth()}</p>` // width with padding
+  const outerWidth = `<p>Outer Width ${dimensions.outerWidth()}</p>` // width with padding and border
+  const outerWidthWithMargin = `<p>Outer Width With Margins ${dimensions.outerWidth(true)}</p>` // width padding, border and margin
+  const divider = '<div class="py-3"></div>'
+  const height = `<p>Height ${dimensions.height()}</p>` // height of the main element
+  const innerHeight = `<p>Inner Height ${dimensions.innerHeight()}</p>` // height with padding
+  const outerHeight = `<p>Outer Height ${dimensions.outerHeight()}</p>` // height with padding and border
+  const outerHeightWithMargin = `<p>Outer height With Margins ${dimensions.outerHeight(true)}</p>` // height with padding, border and margin
+  dimensions.append(
+    width,
+    innerWidth,
+    outerWidth,
+    outerWidthWithMargin,
+    divider,
+    height,
+    innerHeight,
+    outerHeight,
+    outerHeightWithMargin
+  )
+  // we can also set height and widht of an elemet by giving a single argument in number
+  // ex: $('.dimensions').width(300)
+  // For more referece about DOM manipulation - https://www.w3schools.com/jquery/jquery_ref_html.asp
 })
