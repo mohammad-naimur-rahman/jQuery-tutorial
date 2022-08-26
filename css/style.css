@@ -71,3 +71,12 @@ a:not(:last-of-type) {
   line-height: 1;
   margin: 5px 0;
 }
+
+.ancestors * {
+  border: 1px solid gray;
+  padding: 20px;
+}
+
+.ancestors > * {
+  margin-bottom: 10px;
+}
